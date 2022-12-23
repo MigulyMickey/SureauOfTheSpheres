@@ -25115,7 +25115,7 @@ cast on your turn without an action.</textarea>
                                 <input type="checkbox" name="attr_spellconcentration" value="{{concentration=1}}" checked="checked"><span data-i18n="concentration">Concentration</span><span name="attr_spellduration">up to 1 hour</span>
                               </div>
                               <div class="row"><span class="bold" data-i18n="description:">Description:</span></div>
-                              <div class="row"><span name="attr_spelldescription">You can summon your nightmare companion (see Nightmare stats).
+                              <div class="row"><span name="attr_spelldescription">You can summon Ascaphalus (see dedicated tab).
 𝐀𝐮𝐠𝐦𝐞𝐧𝐭 𝟏 𝐬𝐩: The casting time of summon becomes an action.
 𝐀𝐮𝐠𝐦𝐞𝐧𝐭 𝟐 𝐬𝐩: The effect persists for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action.</span></div>
                               <input type="hidden" name="attr_spellathigherlevels" value="">
@@ -25560,7 +25560,7 @@ than a single ray.
                       <div class="spell">
                         <div class="display">
                           <input type="hidden" name="attr_rollcontent" value="@{wtype}&amp;{template:spell} {{level=@{spellschool} @{spelllevel}}} {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} {{savedc=@{spell_save_dc}}} @{spellconcentration} @{charname_output}">
-                          <button class="spellcard ellipsis btn ui-draggable" type="roll" name="roll_spell" value="@{rollcontent}"><span class="spellname" name="attr_spellname">- Shapechangers</span><span class="innate" name="attr_innate"></span></button>
+                          <button class="spellcard ellipsis btn ui-draggable" type="roll" name="roll_spell" value="@{rollcontent}"><span class="spellname" name="attr_spellname">- Aberrations</span><span class="innate" name="attr_innate"></span></button>
                           <input class="innate_flag" type="hidden" name="attr_innate" value="">
                           <input class="spellritual" type="hidden" name="attr_spellritual" value="0">
                           <input class="spellconcentration" type="hidden" name="attr_spellconcentration" value="0">
@@ -25574,9 +25574,6 @@ than a single ray.
                         <div class="wrapper">
                             
                           <div class="details">
-                            <div class="row ellipsis"><span name="attr_spellname">- Aberrations</span>
-                              <input class="innate_flag" type="hidden" name="attr_innate" value="">
-                            </div>
                             <div class="row"><span class="bold" data-i18n="description:">Description:</span></div>
                             <div class="row"><span name="attr_spelldescription">For the duration, you can potentially divine the presence of aberrations within its area. If a creature of the aberration creature type fails a Charisma saving throw, you can see a faint aberration aura surrounding them, allowing you to determine whether or not the creature is an aberration. An aura can only be seen while the creature is also visible; however, even if you cannot see the creature, you do sense the presence and general direction of those auras.
                               𝐑𝐞𝐜𝐚𝐥𝐥 𝐋𝐨𝐫𝐞 (𝐀𝐮𝐠𝐦𝐞𝐧𝐭 𝟏 𝐬𝐩): You can focus on a visible aberration aura for 1 minute and make a DC 20 Intelligence (Arcana) check. With a successful check, you learn what kind of aberration the creature is. You can apply this augment multiple times during the same casting of Detect Aberrations, each time focusing on a different aberration aura.</span></div>
@@ -25603,9 +25600,6 @@ than a single ray.
                           <div class="wrapper">
                               
                             <div class="details">
-                              <div class="row ellipsis"><span name="attr_spellname">- Charm</span>
-                                <input class="innate_flag" type="hidden" name="attr_innate" value="">
-                              </div>
                               <div class="row"><span class="bold" data-i18n="description:">Description:</span></div>
                               <div class="row"><span name="attr_spelldescription">For the duration, you can potentially divine the presence of charm, compulsion, domination, possession, and Mind sphere effects within its area. If a creature under such effects or abilities fails a Charisma saving throw, you can see a faint charm aura surrounding them. An aura can only be seen while the creature is also visible; however, even if you cannot see the creature, you do sense the presence and general direction of those auras.
 𝐀𝐮𝐠𝐦𝐞𝐧𝐭 𝟏 𝐬𝐩: You can focus on a visible charm aura for 1 minute and make a DC 20 Intelligence (Arcana) check. With a successful check, you learn what charm, compulsion, domination, possession, or Mind sphere effects or abilities are affecting the creature, if any. You can apply this augment multiple times during the same casting of Detect Charm, each time focusing on a different charm aura.</span></div>
@@ -25632,9 +25626,6 @@ than a single ray.
                           <div class="wrapper">
                               
                             <div class="details">
-                              <div class="row ellipsis"><span name="attr_spellname">- Hostility</span>
-                                <input class="innate_flag" type="hidden" name="attr_innate" value="">
-                              </div>
                               <div class="row"><span class="bold" data-i18n="description:">Description:</span></div>
                               <div class="row"><span name="attr_spelldescription">For the duration, you can divine whenever a creature or an object within its area has taken hit point damage. In addition to you gain knowledge as to the amount and type of damage dealt and from what direction the damage was dealt from. If the source of the damage is from a creature within the area of your divine effect, it must succeed on a Charisma saving throw or have its space have a faint hostility aura that you can see. If the source of the damage is not from a creature, but is inside the area of your divine effect, you can see a faint hostility aura in the space of the source.
 𝐀𝐮𝐠𝐦𝐞𝐧𝐭 𝟏 𝐬𝐩: You can focus on a hostility aura as a bonus action and make a DC 20 Intelligence (Investigation) check. With a successful check, the hostility aura will continue to follow the movement of the source for the remainder of the duration, granting any creature who can see the aura advantage on any attack rolls made against the source. You can apply this augment multiple times during the same casting of Detect Hostility, each time focusing on a different hostility aura.</span></div>
@@ -25661,9 +25652,6 @@ than a single ray.
                           <div class="wrapper">
                             
                             <div class="details">
-                              <div class="row ellipsis"><span name="attr_spellname">- Magic</span>
-                                <input class="innate_flag" type="hidden" name="attr_innate" value="">
-                              </div>
                               <div class="row"><span class="bold" data-i18n="description:">Description:</span></div>
                               <div class="row"><span name="attr_spelldescription">For the duration, you can potentially divine the presence of magic within its area. Objects or areas that are under the effects of a spell or magic sphere talent or ability, have a faint magic aura around them that you can see. If a creature under the effect of a spell or magic sphere talent or ability fails a Charisma saving throw, you can see a faint magic aura surrounding them, allowing you to determine whether or not the creature is under the effects of magic. An aura can only be seen while the creature or object is also visible; however, even if you cannot see the creature or object, you do sense the presence and general direction of those auras.
 𝐀𝐮𝐠𝐦𝐞𝐧𝐭 𝟏 𝐬𝐩: You can focus on a visible magic aura for 1 minute and make a DC 20 Intelligence (Arcana) check. With a successful check, you can also divine additional information about its properties. You can apply this augment multiple times during the same casting of Detect Magic, each time focusing on a different magic aura.
@@ -25692,9 +25680,6 @@ than a single ray.
                           <div class="wrapper">
                               
                             <div class="details">
-                              <div class="row ellipsis"><span name="attr_spellname">- [✨1 SP] Secrets</span>
-                                <input class="innate_flag" type="hidden" name="attr_innate" value="">
-                              </div>
                               <div class="row"><span class="bold" data-i18n="description:">Description:</span></div>
                               <div class="row"><span name="attr_spelldescription">You can divine for things expressly designed to be hidden. This includes secret doors, hidden caches, and secret compartments. Not only does this detect the presence of such secrets, but it also gives you knowledge of their trigger mechanisms. This only detects doors, passages, and openings specifically designed to avoid detection.</span></div>
                               <input type="hidden" name="attr_spellathigherlevels" value="">
@@ -25720,9 +25705,6 @@ than a single ray.
                           <div class="wrapper">
                               
                             <div class="details">
-                              <div class="row ellipsis"><span name="attr_spellname">- Shapechangers</span>
-                                <input class="innate_flag" type="hidden" name="attr_innate" value="">
-                              </div>
                               <div class="row"><span class="bold" data-i18n="description:">Description:</span></div>
                               <div class="row"><span name="attr_spelldescription">For the duration, you can potentially divine the presence of shapechangers within its area. If a creature with the shapechanger tag, shapeshifter ancestry (such as a changeling), or a creature affected by a petrification or polymorph effect (such as the shapeshift Alteration sphere ability) fails a Charisma saving throw, you can see a faint shapeshifter aura surrounding them, allowing you to determine whether or not the creature has morphic qualities. An aura can only be seen while the creature is also visible; however, even if you cannot see the creature, you do sense the presence and general direction of those auras.
 𝐑𝐞𝐜𝐚𝐥𝐥 𝐋𝐨𝐫𝐞 (𝐀𝐮𝐠𝐦𝐞𝐧𝐭 𝟏 𝐬𝐩): You can focus on a visible shapeshifter aura 1 minute and make a DC 20 Intelligence (Arcana) check. With a successful check, you learn what kind of shapechanger the creature is, what their primary shapechanger heritage is, or how the creature was petrified or polymorphed as well as their original form. You can apply this augment multiple times during the same casting of Detect Shapechanger, each time focusing on a different shapeshifter aura.</span></div>
@@ -27035,10 +27017,6 @@ casting.</textarea>
                                   <div class="wrapper">
                                                 
                                     <div class="details">
-                                      <div class="row ellipsis"><span name="attr_spellname">Extended Spells</span>
-                                        <input class="innate_flag" type="hidden" name="attr_innate" value="">
-                                      </div>
-                                      
                                       <div class="row"><span class="bold" data-i18n="description:">Description:</span></div>
                                       <div class="row"><span name="attr_spelldescription">You can augment the maximum duration of your magic sphere abilities. These augments cannot benefit a magic sphere ability with a duration of instantaneous, greater than 24 hours, or less than 1 minute, nor can it increase the maximum duration of your magic sphere abilities beyond 24 hours.
 𝐀𝐮𝐠𝐦𝐞𝐧𝐭 𝐗 𝐬𝐩 (𝐦𝐚𝐱 𝟒): The maximum duration of your magic sphere abilities increases by X steps.</span></div>
@@ -27066,9 +27044,6 @@ casting.</textarea>
                                   <div class="wrapper">
                                                 
                                     <div class="details">
-                                      <div class="row ellipsis"><span name="attr_spellname">Mass Spells</span>
-                                        <input class="innate_flag" type="hidden" name="attr_innate" value="">
-                                      </div>
                                       
                                       <div class="row"><span class="bold" data-i18n="description:">Description:</span></div>
                                       <div class="row"><span name="attr_spelldescription">You can increase the number of targets that your sphere effects can affect per casting. This can only be applied to a magic sphere ability that targets a single creature or object. This cannot be used on a magic sphere ability that targets an area and each target of the magic sphere effect must be within range.
