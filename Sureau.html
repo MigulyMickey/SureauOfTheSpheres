@@ -1226,19 +1226,19 @@ input[type=radio].tab-button.options:checked ~ .page.options {
 
 input[type=radio].tab-button.core,
 input[type=radio].tab-button.core + span {
-  right: 116px;
+  right: 190px;
   width: 45px;
 }
 
 input[type=radio].tab-button.bio,
 input[type=radio].tab-button.bio + span {
-  right: 83px;
-  width: 30px;
+  right: 20px;
+  width: 100px;
 }
 
 input[type=radio].tab-button.spells,
 input[type=radio].tab-button.spells + span {
-  right: 20px;
+  right: 125px;
   width: 60px;
 }
 
@@ -21636,8 +21636,8 @@ turn. The <span name="attr_npc_name"></span> regains spent legendary actions at 
     </div>
     <div class="container pc">
       <input class="tab-button core" name="attr_tab" type="radio" value="core" checked="checked"><span data-i18n="core-u">CORE</span>
-      <input class="tab-button bio" name="attr_tab" type="radio" value="bio"><span data-i18n="bio-u">BIO</span>
       <input class="tab-button spells" name="attr_tab" type="radio" value="spells"><span data-i18n="spells-u">SPELLS</span>
+      <input class="tab-button bio" name="attr_tab" type="radio" value="bio"><span data-i18n="bio-u">ASCAPHALUS</span>
       <input class="tab-button options" name="attr_tab" type="radio" value="options"><span style="font-family: pictos">y</span>
       <div class="page core">
     <div class="header">
@@ -23921,73 +23921,8 @@ simple version that can be re-enabled from the Settings(gear) tab of the
     </div>
 
       </div>
-      <div class="page bio">    <div class="header">
-        <div class="name-container">
-            <img src="Sureau_files/srd5_360.png" style="padding-bottom: 5px;" alt="SRD5 by Roll20">
-            <input type="text" name="attr_character_name" style="width: 100%;" value="Sureau">
-            <span class="label" data-i18n="char-name-u">CHARACTER NAME</span>
-        </div>
-        <div class="header-info">
-            <div class="top" style="position: relative; top: 10px;">
-                <div class="hlabel-container">
-                    <input type="text" name="attr_age" style="width: 120px;">
-                    <span class="label" data-i18n="age-u">AGE</span>
-                </div>
-                <div class="hlabel-container">
-                    <input type="text" name="attr_size" style="width: 120px;">
-                    <span class="label" data-i18n="size-u">SIZE</span>
-                </div>
-                <div class="hlabel-container">
-                    <input type="text" name="attr_height" style="width: 120px;">
-                    <span class="label" data-i18n="height-u">HEIGHT</span>
-                </div>
-                <div class="hlabel-container">
-                    <input type="text" name="attr_weight" style="width: 120px;">
-                    <span class="label" data-i18n="weight-u">WEIGHT</span>
-                </div>
-            </div>
-            <div class="bottom">
-                <div class="hlabel-container">
-                    <input type="text" name="attr_eyes" style="width: 160px;">
-                    <span class="label" data-i18n="eye-u">EYES</span>
-                </div>
-                <div class="hlabel-container">
-                    <input type="text" name="attr_skin" style="width: 160px;">
-                    <span class="label" data-i18n="skin-u">SKIN</span>
-                </div>
-                <div class="hlabel-container">
-                    <input type="text" name="attr_hair" style="width: 160px;">
-                    <span class="label" data-i18n="hair-u">HAIR</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="body">
-        <div class="col col1">
-            <div class="textbox">
-                <textarea name="attr_character_appearance" style="min-height: 300px; height: 300px;"></textarea>
-                <span class="label" data-i18n="char-appearance-u">CHARACTER APPEARANCE</span>
-            </div>
-            <div class="textbox">
-                <textarea name="attr_character_backstory" style="min-height: 623px; height: 623px;"></textarea>
-                <span class="label" data-i18n="char-backstory-u">CHARACTER BACKSTORY</span>
-            </div>
-        </div>
-        <div class="col2-3">
-            <div class="textbox">
-                <textarea name="attr_allies_and_organizations" style="min-height: 288px; height: 300px;"></textarea>
-                <span class="label" data-i18n="allies-orgs-u">ALLIES &amp; ORGANIZATIONS</span>
-            </div>
-            <div class="textbox">
-                <textarea name="attr_additional_feature_and_traits" style="min-height: 289px; height: 300px;"></textarea>
-                <span class="label" data-i18n="add-feats-traits-u">ADDITIONAL FEATURES &amp; TRAITS</span>
-            </div>
-            <div class="textbox">
-                <textarea name="attr_treasure" style="min-height: 300px; height: 300px;"></textarea>
-                <span class="label" data-i18n="treasure-u">TREASURE</span>
-            </div>
-        </div>
-    </div>
+      <div class="page bio">
+          <embed type="text/html" src="Ascaphalus.html" width="100%" height="900px">
       </div>
       <div class="page spells">
         <div class="header">
