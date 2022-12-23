@@ -24952,151 +24952,7 @@ Another creature who is outside the vortex but still within reach of a grappled 
                           <button class="output btn ui-draggable" type="roll" name="roll_output" value="@{wtype}&amp;{template:spelloutput} {{level=@{spellschool} @{spelllevel}}} {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} {{savedc=@{roll_output_dc}}} @{spellconcentration} @{charname_output}">w</button>
                           <input class="details-flag" type="checkbox" name="attr_details-flag"><span>i</span>
                           <div class="wrapper">
-                                <div class="options">
-                              <div class="row"><span data-i18n="name:-u">NAME:</span>
-                                <input type="text" name="attr_spellname" value="Summon Ascaphalus">
-                              </div>
-                              <div class="row"><span data-i18n="school:-u">SCHOOL:</span>
-                                <select name="attr_spellschool">
-                                  <option value="abjuration" data-i18n="abjuration">Abjuration</option>
-                                  <option value="conjuration" data-i18n="conjuration" selected="selected">Conjuration</option>
-                                  <option value="divination" data-i18n="divination">Divination</option>
-                                  <option value="enchantment" data-i18n="enchantment">Enchantment</option>
-                                  <option value="evocation" data-i18n="evocation">Evocation</option>
-                                  <option value="illusion" data-i18n="illusion">Illusion</option>
-                                  <option value="necromancy" data-i18n="necromancy">Necromancy</option>
-                                  <option value="transmutation" data-i18n="transmutation">Transmutation</option>
-                                </select>
-                                <input type="checkbox" name="attr_spellritual" value="{{ritual=1}}"><span data-i18n="ritual-u">RITUAL</span>
-                              </div>
-                              <div class="row"><span data-i18n="casting-time:-u">CASTING TIME:</span>
-                                <input type="text" name="attr_spellcastingtime" value="10 minutes">
-                              </div>
-                              <div class="row"><span data-i18n="range:-u">RANGE:</span>
-                                <input type="text" name="attr_spellrange" value="Touch">
-                              </div>
-                              <div class="row"><span data-i18n="target:-u">TARGET:</span>
-                                <input type="text" name="attr_spelltarget" value="Unoccupied space sufficient to contain the companion">
-                              </div>
-                              <input type="hidden" name="attr_spellcomp">
-                              <div class="row"><span data-i18n="components:-u">COMPONENTS:</span>
-                                <input type="checkbox" M,S,W="attr_spellcomp_materials" placeholder="ruby dust worth 50gp" data-i18n-placeholder="ruby-dust-place">
-                              </div>
-                              <div class="row">
-                                <input type="checkbox" name="attr_spellconcentration" value="{{concentration=1}}" checked="checked"><span data-i18n="concentration-u">CONCENTRATION</span>
-                              </div>
-                              <div class="row"><span data-i18n="duration:-u">DURATION:</span>
-                                <input type="text" name="attr_spellduration" value="up to 1 hour">
-                              </div>
-                              <div class="row"><span data-i18n="spell-ability-u">SPELLCASTING ABILITY</span>
-                                <select name="attr_spell_ability">
-                                  <option value="0*" data-i18n="none-u" selected="selected">NONE</option>
-                                  <option value="spell" data-i18n="spell-u">SPELL</option>
-                                  <option value="@{strength_mod}+" data-i18n="strength-u">STRENGTH</option>
-                                  <option value="@{dexterity_mod}+" data-i18n="dexterity-u">DEXTERITY</option>
-                                  <option value="@{constitution_mod}+" data-i18n="constitution-u">CONSTITUTION</option>
-                                  <option value="@{intelligence_mod}+" data-i18n="intelligence-u">INTELLIGENCE</option>
-                                  <option value="@{wisdom_mod}+" data-i18n="wisdom-u">WISDOM</option>
-                                  <option value="@{charisma_mod}+" data-i18n="charisma-u">CHARISMA</option>
-                                </select>
-                              </div>
-                              <div class="row"><span data-i18n="innate:-u">INNATE:</span>
-                                <input type="text" name="attr_innate" placeholder="1/day">
-                              </div>
-                              <div class="row"><span data-i18n="output:-u">OUTPUT:</span>
-                                <select name="attr_spelloutput">
-                                  <option value="SPELLCARD" data-i18n="spellcard-u" selected="selected">SPELLCARD</option>
-                                  <option value="ATTACK" data-i18n="attack-u">ATTACK</option>
-                                </select>
-                              </div>
-                              <input class="spellattackinfoflag" type="hidden" name="attr_spelloutput">
-                              <div class="spellattackinfo">
-                                <div class="row"><span data-i18n="spell-atk:-u">SPELL ATTACK:</span>
-                                  <select name="attr_spellattack">
-                                    <option value="None" data-i18n="none" selected="selected">None</option>
-                                    <option value="Melee" data-i18n="melee">Melee</option>
-                                    <option value="Ranged" data-i18n="ranged">Ranged</option>
-                                  </select>
-                                </div>
-                                <div class="row"><span data-i18n="damage:-u">DAMAGE:</span>
-                                  <input type="text" name="attr_spelldamage" style="width: 50px;"><span data-i18n="type:-u">TYPE:</span>
-                                  <input type="text" name="attr_spelldamagetype" style="width: 103px;">
-                                </div>
-                                <div class="row"><span data-i18n="damage2:-u">DAMAGE2:</span>
-                                  <input type="text" name="attr_spelldamage2" style="width: 45px;"><span data-i18n="type:-u">TYPE:</span>
-                                  <input type="text" name="attr_spelldamagetype2" style="width: 103px;">
-                                </div>
-                                <div class="row"><span data-i18n="healing:-u">HEALING:</span>
-                                  <input type="text" name="attr_spellhealing" style="width: 45px;">
-                                </div>
-                                <div class="row">
-                                  <input type="checkbox" name="attr_spelldmgmod" value="Yes"><span data-i18n="add-ability-mod-u">ADD ABILITY MOD TO DAMAGE OR HEALING</span>
-                                </div>
-                                <div class="row"><span data-i18n="cantrip-progression:-u">CANTRIP PROGRESSION</span>
-                                  <select name="attr_spell_damage_progression">
-                                    <option value="" selected="selected" data-i18n="none-u">NONE</option>
-                                    <option value="Cantrip Dice" data-i18n="cantrip-dice-u">CANTRIP DICE</option>
-                                    <option value="Cantrip Beam" data-i18n="cantrip-beam-u">CANTRIP BEAM</option>
-                                  </select>
-                                </div>
-                                <div class="row"><span data-i18n="saving-throw:-u">SAVING THROW:</span>
-                                  <select name="attr_spellsave">
-                                    <option value="" selected="selected" data-i18n="none-u">NONE</option>
-                                    <option value="Strength" data-i18n="str-u">STR</option>
-                                    <option value="Dexterity" data-i18n="dex-u">DEX</option>
-                                    <option value="Constitution" data-i18n="con-u">CON</option>
-                                    <option value="Intelligence" data-i18n="int-u">INT</option>
-                                    <option value="Wisdom" data-i18n="wis-u">WIS</option>
-                                    <option value="Charisma" data-i18n="cha-u">CHA</option>
-                                  </select><span data-i18n="effect:-u">EFFECT:</span>
-                                  <input type="text" name="attr_spellsavesuccess" style="width: 78px;" placeholder="Half damage" data-i18n-placeholder="half-dmg-place">
-                                </div>
-                                <div class="row"><span data-i18n="at-higher-lvl-dmg:-u">HIGHER LVL CAST DMG:</span>
-                                  <input type="text" name="attr_spellhldie" placeholder="1" style="width: 15px; text-align: right;">
-                                  <select name="attr_spellhldietype">
-                                    <option value="" selected="selected" data-i18n="none-u">NONE</option>
-                                    <option value="d4">d4</option>
-                                    <option value="d6">d6</option>
-                                    <option value="d8">d8</option>
-                                    <option value="d10">d10</option>
-                                    <option value="d12">d12</option>
-                                    <option value="d20">d20</option>
-                                  </select><span>+</span>
-                                  <input type="text" name="attr_spellhlbonus" placeholder="0" style="width: 15px; text-align: center;">
-                                </div>
-                                <div class="row"><span data-i18n="include_spell_desc:-u">INCLUDE SPELL DESCRIPTION IN ATTACK:</span>
-                                  <select name="attr_includedesc">
-                                    <option value="off" selected="selected" data-i18n="off">Off</option>
-                                    <option value="partial" data-i18n="partial">Partial</option>
-                                    <option value="on" data-i18n="on">On</option>
-                                  </select>
-                                </div>
-                              </div>
-                              <div class="row"><span data-i18n="description:-u">DESCRIPTION:</span></div>
-                              <div class="row">
-                                <textarea name="attr_spelldescription">You
- can summon Ascaphalus (see its stats).
-𝐀𝐮𝐠𝐦𝐞𝐧𝐭 𝟏 𝐬𝐩: The casting time of summon becomes an action.
-𝐀𝐮𝐠𝐦𝐞𝐧𝐭 𝟐 𝐬𝐩: The effect persists for the remaining duration 
-without concentration. This augment may be applied after the effect is 
-cast on your turn without an action.</textarea>
-                              </div>
-                              <div class="row"><span data-i18n="at-higher-lvl:-u">AT HIGHER LEVELS:</span></div>
-                              <div class="row">
-                                <textarea name="attr_spellathigherlevels" style="height: 36px; min-height: 36px;"></textarea>
-                              </div>
-                              <div class="row"><span data-i18n="class:-u">CLASS:</span>
-                                <input type="text" name="attr_spellclass" style="width: 45px;">
-                              </div>
-                              <div class="row"><span data-i18n="type:-u">TYPE:</span>
-                                <input type="text" name="attr_spellsource" style="width: 45px;">
-                              </div>
-                              <input type="hidden" name="attr_spellattackid">
-                              <input type="hidden" name="attr_spelllevel" value="cantrip">
-                              <label class="options-done">
-                                <input type="checkbox" name="attr_options-flag"><span class="label" data-i18n="done">Done</span>
-                              </label>
-                            </div>
+                              
                             <div class="details">
                               <div class="row ellipsis"><span name="attr_spellname">Summon Ascaphalus</span>
                                 <input class="innate_flag" type="hidden" name="attr_innate" value="">
@@ -25115,7 +24971,8 @@ cast on your turn without an action.</textarea>
                                 <input type="checkbox" name="attr_spellconcentration" value="{{concentration=1}}" checked="checked"><span data-i18n="concentration">Concentration</span><span name="attr_spellduration">up to 1 hour</span>
                               </div>
                               <div class="row"><span class="bold" data-i18n="description:">Description:</span></div>
-                              <div class="row"><span name="attr_spelldescription">You can summon Ascaphalus (see dedicated tab).
+                              <div class="row"><span name="attr_spelldescription">You can summon Ascaphalus (see dedicated tab), causing it to appear in an adjacent square, ready to act on your following turn.
+                                In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction and bonus actions on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take one of the actions in its stat block or the Dash, Disengage, Help, Hide, or Search action.                               
 𝐀𝐮𝐠𝐦𝐞𝐧𝐭 𝟏 𝐬𝐩: The casting time of summon becomes an action.
 𝐀𝐮𝐠𝐦𝐞𝐧𝐭 𝟐 𝐬𝐩: The effect persists for the remaining duration without concentration. This augment may be applied after the effect is cast on your turn without an action.</span></div>
                               <input type="hidden" name="attr_spellathigherlevels" value="">
@@ -31081,7 +30938,8 @@ cast on your turn without an action.</span></div>
                         </div>
                         <div class="spell-desc-row"><span class="bold description__label" data-i18n="description:">Description:</span></div>
                         <div class="spell-desc-row"><span class="description__value" name="attr_spelldescription">You
- can summon Ascaphalus (see its stats).
+ can summon Ascaphalus (see its stats), causing it to appear in an adjacent square, ready to act on your following turn.
+ In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction and bonus actions on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take one of the actions in its stat block or the Dash, Disengage, Help, Hide, or Search action.
 𝐀𝐮𝐠𝐦𝐞𝐧𝐭 𝟏 𝐬𝐩: The casting time of summon becomes an action.
 𝐀𝐮𝐠𝐦𝐞𝐧𝐭 𝟐 𝐬𝐩: The effect persists for the remaining duration 
 without concentration. This augment may be applied after the effect is 

@@ -21360,6 +21360,24 @@ body,
                 </div>
                 <div class="display" style="margin-bottom: 2px;">
                   <button class="pick btn ui-draggable" type="roll" name="roll_npc_roll_output" value="@{wtype}&amp;{template:traits} @{charname_output} {{name=@{name}}} {{description=@{description}}}">
+                    <div class="row wide"><span class="bold wide" name="attr_name">Conjured Companion</span></div>
+                  </button><span class="description" name="attr_description">Ascaphalus must be summoned through the Summon Ascaphalus spell (see SPELLS tab).
+                    In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction and bonus actions on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take one of the actions in its stat block or the Dash, Disengage, Help, Hide, or Search action.</span>
+                </div>
+              </div>
+              <div class="trait">
+                <div class="npc_options">
+                  <div class="row"><span data-i18n="name:-u">NAME:</span>
+                    <input type="text" name="attr_name" placeholder="False Appearance." data-i18n-placeholder="npc-trait-name-place" value="Conjured Companion">
+                  </div>
+                  <div class="row">
+                    <textarea name="attr_description" placeholder="If the dragon fails..." data-i18n-placeholder="npc-trait-desc-place">Ascaphalus must be summoned through the Summon Ascaphalus spell (see SPELLS tab).
+                      In combat, your companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction and bonus actions on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take one of the actions in its stat block or the Dash, Disengage, Help, Hide, or Search action.
+                    </textarea>
+                  </div>
+                </div>
+                <div class="display" style="margin-bottom: 2px;">
+                  <button class="pick btn ui-draggable" type="roll" name="roll_npc_roll_output" value="@{wtype}&amp;{template:traits} @{charname_output} {{name=@{name}}} {{description=@{description}}}">
                     <div class="row wide"><span class="bold wide" name="attr_name">Spell Points (3)</span></div>
                   </button><span class="description" name="attr_description"></span>
                 </div>
